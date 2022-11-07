@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 글자속성</title>
+    <style>
+      .a {
+        font-size: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .b {
+        font-size: 2em;
+      }
+      .c {
+        font-size: large;
+      }
+      .d {
+        font-size: small;
+      }
+
+      .font_arial {
+        font-family: "없는글꼴", sans-serif;
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+      }
+
+      .font_roman {
+        font-family: "없는글꼴", serif;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .font {
+        font: italic bold 20px consolas, sans-serif;
+      }
+
+      a {
+        text-decoration: line-through;
+      }
+
+      /* 한 글자 들여쓰기 */
+      .indent_1 {
+        text-indent: 1em;
+      }
+      /* 두 글자 들여쓰기 */
+      .indent_2 {
+        text-indent: 2em;
+      }
+      /* 세 글자 들여쓰기 */
+      .indent_3 {
+        text-indent: 3em;
+      }
+
+      div.blur {
+        text-shadow: 3px 3px 5px red;
+      }
+
+      /* shadow 연습 */
+      div {
+        font: normal 24px verdata;
+      }
+      .dropText {
+        text-shadow: 3px 3px;
+      }
+      .redText {
+        text-shadow: 3px 3px red;
+      }
+      .blurText {
+        text-shadow: 3px 3px 5px skyblue;
+      }
+      .glowEffect {
+        text-shadow: 0px 0px 3px red;
+      }
+      .wordArtEffect {
+        color: white;
+        text-shadow: 0px 0px 3px darkblue;
+      }
+      .threeDEffect {
+        color: white;
+        text-shadow: 2px 2px 4px black;
+      }
+      .multiEffect {
+        color: yellow;
+        text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p class="a">안녕하세요. 김규리입니다.</p>
+    <p class="b">안녕하세요. 김규리입니다.</p>
+    <p class="c">안녕하세요. 김규리입니다.</p>
+    <p class="d">안녕하세요. 김규리입니다.</p> -->
+
+    <p class="font_arial">Hello, HTML</p>
+    <p class="font_roman">Hello, HTML</p>
+    <p class="font">Hello, HTML</p>
+    <a href="http://www.naver.com">네이버로 이동하기</a>
+
+    <p class="indent_1">안녕하세요. 김규리입니다.</p>
+    <p class="indent_2">안녕하세요. 김규리입니다.</p>
+    <p class="indent_3">안녕하세요. 김규리입니다.</p>
+
+    <div class="blur">Drop Shadow</div>
+
+    <hr />
+    <h3>텍스트 그림자 만들기</h3>
+    <div class="dropText">Drop Shadow</div>
+    <div class="redText">Color Shadow</div>
+    <div class="blurText">Blur Shadow</div>
+    <div class="glowEffect">Glow Effect</div>
+    <div class="wordArtEffect">Word Art Effect</div>
+    <div class="threeDEffect">3D Effect</div>
+    <div class="multiEffect">Multiple Shadow</div>
+  </body>
+</html>

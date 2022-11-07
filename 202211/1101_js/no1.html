@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var input = prompt("정수를 입력하세요");
+      input = parseInt(input);
+      var printStart = function () {
+        document.write("*");
+      };
+
+      if (input > 0) {
+        for (var i = 1; i <= input; i++) {
+          for (var j = 0; j < i; j++) {
+            printStart();
+          }
+          document.write("<br/>");
+        }
+      } else if (input <= 0 || isNaN(input)) {
+        document.write("입력 오류 입니다.");
+      }
+
+      // isNaN(m) : m 값이 숫자인지 검사하는 함수(숫자가 아니면 true, 숫자면 false를 반환)
+    </script>
+  </body>
+</html>

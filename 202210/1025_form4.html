@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>가보고 싶은 곳</h3>
+    <hr />
+    <form>
+      나라 : <input type="text" list="countries" /><br />
+      <datalist id="countries">
+        <option value="가나"></option>
+        <option value="스위스"></option>
+        <option value="브라질"></option>
+      </datalist>
+    </form>
+
+    <h3>버튼 생성 방법 2가지</h3>
+    <hr />
+    <form>
+      검색 : <input type="text" size="10" value="" />
+      <input type="button" value="Q1" />
+      <button type="button">Q2</button><br />
+
+      submit 버튼 : <input type="submit" value="전송1" />
+      <button type="submit">전송2</button><br />
+
+      reset 버튼 : <input type="reset" value="리셋1" />
+      <button type="reset">리셋2</button><br />
+
+      이미지 버튼 :
+      <input type="image" src="./medias/marker.png" alt="이미지 버튼" />
+      <button type="button">
+        <img src="./medias/marker.png" alt="이미지 버튼" />
+      </button>
+    </form>
+
+    <h3>체크박스 만들기</h3>
+    <hr />
+    <form>
+      <label>짜장면 <input type="checkbox" value="1" /></label>
+      <label>짬뽕<input type="checkbox" value="2" checked /> </label>
+      <label>탕수육<input type="checkbox" value="3" /></label>
+    </form>
+
+    <h3>라디오버튼 만들기</h3>
+    <hr />
+    <form>
+      <label
+        ><input type="radio" name="china" value="1" />짜장면<img
+          src="./medias/jajang.png"
+          alt="" /></label
+      ><br />
+      <label
+        ><input type="radio" name="china" value="2" checked />짬뽕<img
+          src="./medias/jjambbong.png"
+          alt="" /></label
+      ><br />
+      <label
+        ><input type="radio" name="china" value="3" />탕수육<img
+          src="./medias/tangsuyuk.png"
+          alt=""
+      /></label>
+    </form>
+
+    <h3>콤보박스 만들기</h3>
+    <hr />
+    <form>
+      <select name="china">
+        <option value="1">짜장면</option>
+        <option value="2" selected>짬뽕</option>
+        <option value="3">탕수육</option>
+      </select>
+    </form>
+    <br /><br /><br /><br />
+    <h3>로그인 폼</h3>
+    <hr />
+    <form name="fo" method="get">
+      <label> 사용자 id : <input type="text" size="15" value="" /> </label>
+    </form>
+  </body>
+</html>

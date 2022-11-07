@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문과 반복문-2 2번</title>
+  </head>
+  <body>
+    <script>
+      var a = prompt("첫번째 숫자를 입력하세요");
+      var b = prompt("두번째 숫자를 입력하세요");
+      var c = prompt("세번째 숫자를 입력하세요");
+      var min = 0;
+
+      if (a < b) {
+        if (a < c) {
+          min = a;
+        } else {
+          min = c;
+        }
+      } else {
+        min = b;
+      }
+
+      document.write("입력한 수 : " + a + ", " + b + ", " + c);
+      document.write("가장 작은 수 는 " + min);
+    </script>
+  </body>
+</html>

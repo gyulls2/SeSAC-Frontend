@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>셀렉터 만들기</title>
+    <style>
+      body.main {
+        background: aliceblue;
+      }
+
+      h3,
+      li {
+        color: brown;
+      }
+
+      h3::first-letter {
+        color: red;
+      }
+
+      div > b {
+        background: yellow;
+      }
+
+      li > b {
+        color: blue;
+      }
+
+      li > span {
+        color: forestgreen;
+      }
+
+      #list {
+        background: mistyrose;
+      }
+
+      li:hover {
+        background: yellowgreen;
+      }
+
+      .warning {
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <h3>Web Programming</h3>
+    <hr />
+    <div>
+      <div>2학기 <b>학습 내용</b>입니다.</div>
+      <ul id="list">
+        <li><span>HTML5</span></li>
+        <li><b>CSS</b></li>
+        <li>JAVASCRIPT</li>
+      </ul>
+      <div class="warning">60점 이하는 F</div>
+    </div>
+  </body>
+</html>

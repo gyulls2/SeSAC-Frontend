@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문과 반복문-2 3번</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        color: #333;
+      }
+
+      .box1 {
+        width: 85%;
+        margin: 0 auto;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #ccc;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+        line-height: 3rem;
+        font-size: 20px;
+      }
+
+      .box2 {
+        position: absolute;
+        height: 50px;
+        width: 85%;
+        line-height: 50px;
+        bottom: 30px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 1rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>표준체중 계산기</h3>
+    <script>
+      var height = prompt("키를 입력하세요");
+      var weight = prompt("몸무게를 입력하세요");
+      var average = 0;
+      var str;
+      var color;
+
+      height = parseInt(height);
+      weight = parseInt(weight);
+      average = (height - 100) * 0.9;
+
+      if (weight < average) {
+        str = "저체중";
+        color = "#3498DB";
+      } else if (weight > average) {
+        str = "과체중";
+        color = "#E74C3C";
+      } else {
+        str = "표준";
+        color = "#2ECC71";
+      }
+      document.write("<div class = 'box1'>");
+      document.write("키 : " + height + "<br>");
+      document.write("몸무게 : " + weight + "<br>");
+      document.write("표준체중 : " + average);
+
+      document.write(
+        "<div class = 'box2' style='background:" +
+          color +
+          ";'>" +
+          str +
+          "입니다.</div>"
+      );
+      document.write("</div>");
+    </script>
+  </body>
+</html>

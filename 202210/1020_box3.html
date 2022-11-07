@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: none;
+      }
+
+      /* box-shadow 속성 */
+
+      .redBox {
+        box-shadow: 10px 10px red;
+      }
+      .blurBox {
+        box-shadow: 10px 10px 5px skyblue;
+      }
+      .multiEffect {
+        box-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+
+      div {
+        width: 150px;
+        height: 100px;
+        border: 10px solid lightgray;
+        background-image: url("./medias/apple.png");
+        background-size: 150px 100px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>다음 빈 곳에 숨은 단어는 무엇일까요 ?</h3>
+    <hr />
+    <ul>
+      <li>I (<span>love</span>) you.</li>
+      <li>CSS is Cascading (<span>Style</span>) Sheet.</li>
+      <li>다음 배울 과목은 (<span>JavaScript</span>) 입니다</li>
+    </ul>
+
+    <!-- box-shadow 속성 -->
+    <h3>박스 그림자 만들기</h3>
+    <hr />
+    <div class="redBox"></div>
+    <br />
+    <div class="blurBox"></div>
+    <br />
+    <div class="multiEffect"></div>
+  </body>
+</html>

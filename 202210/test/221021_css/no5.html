@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 250px;
+        height: 50px;
+      }
+      .static {
+        background-color: red;
+        position: static;
+        margin-bottom: 50px;
+      }
+      .fixed_top {
+        background-color: orange;
+        position: fixed;
+        top: 100px;
+        left: 120px;
+        z-index: 100;
+      }
+      .fixed_bottom {
+        background-color: skyblue;
+        position: fixed;
+        top: 200px;
+        left: 120px;
+        z-index: -100;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>z-index속성을 이용한 노출 순서 변경</h3>
+    <hr />
+
+    <div class="static">정적 위치(static position)</div>
+    <div class="fixed_top">1번 고정 위치(fixed position)</div>
+    <div class="static">정적 위치(static position)</div>
+    <div class="fixed_bottom">2번 고정 위치(fixed position)</div>
+  </body>
+</html>

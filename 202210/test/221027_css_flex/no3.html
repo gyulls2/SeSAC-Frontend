@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: stretch;
+      }
+
+      .header,
+      .footer {
+        background: pink;
+        width: 100%;
+        height: 10%;
+      }
+
+      .contentBox {
+        display: flex;
+        flex: 1;
+        height: 80%;
+      }
+
+      .content1 {
+        background: palevioletred;
+        flex: 1;
+      }
+      .content2 {
+        background: palegoldenrod;
+        flex: 2;
+      }
+      .content3 {
+        background: plum;
+        flex: 1;
+      }
+
+      /* txt 중앙정렬 */
+      .header,
+      .footer,
+      .contentBox > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h3>Header</h3></div>
+      <div class="contentBox">
+        <div class="content1"><h3>First Content</h3></div>
+        <div class="content2"><h3>Second Content</h3></div>
+        <div class="content3"><h3>Third Content</h3></div>
+      </div>
+      <div class="footer"><h3>Footer</h3></div>
+    </div>
+  </body>
+</html>

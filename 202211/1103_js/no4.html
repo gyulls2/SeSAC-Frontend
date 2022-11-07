@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      do {
+        var a = parseInt(prompt("첫 번째 양의 정수를 입력하세요"));
+        var b = parseInt(prompt("두 번째 양의 정수를 입력하세요"));
+      } while (a <= 0 || b <= 0 || isNaN(a) || isNaN(b));
+
+      var big = a > b ? a : b;
+      var odd = big % 2 ? "홀수" : "짝수";
+
+      document.write("첫 번째 입력한 숫자 : " + a + "<br>");
+      document.write("두 번째 입력한 숫자 : " + b + "<br>");
+      document.write(big + "이 큰 수이고, " + odd + "이다.");
+    </script>
+  </body>
+</html>

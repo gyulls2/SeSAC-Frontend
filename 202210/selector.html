@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 선택자</title>
+    <style>
+      /* * {
+        color: red;
+      }
+      /* h3 {
+        color: brown;
+      }
+      li {
+        color: brown;
+      } */
+
+      /* h3,
+      li {
+        color: brown;
+      }
+
+      #list {
+        background: lightpink;
+      }
+      .warning {
+        color: blue;
+      }
+      body.main {
+        background: aqua;
+      } */
+
+      /* 결합 선택자 - 자식 셀렉터와 자손 셀렉터 */
+      /* 자식 셀렉터 */
+      /* div > b {
+        background: yellow;
+      } */
+      /* 자손 셀렉터 */
+      /* ul b {
+        color: blue;
+      }  */
+
+      /* 가상 요소 선택자 */
+
+      h3::first-letter {
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <h3>Web Programming</h3>
+    <hr />
+    <div>
+      <div>2학기 <b>학습 내용</b></div>
+      <ul id="list">
+        <li>HTML5</li>
+        <li><b>CSS</b></li>
+        <li>Javascript</li>
+      </ul>
+      <div class="warning">60점 이하는 F!</div>
+    </div>
+  </body>
+</html>

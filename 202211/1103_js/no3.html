@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var t = parseInt(prompt("티셔츠 개수를 입력하세요"));
+      var s = parseInt(prompt("스웨터 개수를 입력하세요"));
+      var all = t * 10000 + s * 30000;
+      var sale = 0;
+      document.write("티셔츠 개수 : " + t + "<br>");
+      document.write("스웨터 개수 : " + s + "<br>");
+      document.write("할인 전 금액 : " + all + "<br>");
+
+      if (all <= 100000) {
+        sale = "5%";
+        all *= 0.95;
+      } else {
+        sale = "15%";
+        all *= 0.85;
+      }
+
+      document.write("할인율 : " + sale + "<br>");
+      document.write("합계 : " + all);
+    </script>
+  </body>
+</html>

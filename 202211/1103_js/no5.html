@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      var sum = 0;
+      var big;
+
+      //숫자 입력, 합
+      for (var i = 0; i < 3; i++) {
+        arr.push(parseInt(prompt("양의 정수를 입력하세요")));
+        sum += arr[i];
+      }
+
+      //가장 큰 수
+      if (arr[0] > arr[1]) {
+        if (arr[0] > arr[2]) big = arr[0];
+        else big = arr[1];
+      } else big = arr[2];
+
+      document.write(`입력한 숫자 : ${arr} <br>`);
+      sum % 2
+        ? document.write(`세 수의 합은 홀수이고, 그 합은  ${sum} 이다.`)
+        : document.write(
+            "세 수의 합은 짝수이고, 가장 큰 수는 " + big + "이다."
+          );
+    </script>
+  </body>
+</html>

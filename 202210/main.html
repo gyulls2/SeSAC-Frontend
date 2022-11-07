@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습 1</title>
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <ul>
+      <li><a href="main.html">main</a></li>
+      <li><a href="link.html">link</a></li>
+      <li><a href="id.html">id</a></li>
+      <li><a href="http://naver.com" target="_blank">naver</a></li>
+    </ul>
+    <br /><br /><br />
+
+    <h1 title="h1태그로 작성하였습니다.">1장 홈페이지</h1>
+    <h2 title="h2태그로 작성하였습니다.">h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <!-- p태그 : 단락 나누기 , p와 p사이에는 공백이 생긴다 -->
+    <!-- br태그 : 줄바꾸기 , 그냥 Enter는 공백 하나로 대체 -->
+    <p>
+      br 태그로 다음 줄로 넘어갑니다 <br />
+      Iure consequatur odit eius quidem. Ullam delectus ducimus optio
+      <br /><br />
+      dolorem vitae vero pariatur nesciunt debitis, praesentium voluptatem quae
+      natus excepturi doloremque! Explicabo?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur
+      odit eius quidem. Ullam delectus ducimus optio dolorem vitae vero pariatur
+      nesciunt debitis, praesentium voluptatem quae natus excepturi doloremque!
+      Explicabo?
+    </p>
+
+    <!-- hr태그 : 수평선 긋기 -->
+    <h3>수평선 긋기</h3>
+    <hr />
+    <p>hr 태그는 horizontal에서 딴 글자입니다.</p>
+    <hr />
+
+    <!-- 특수문자로 기호 넣기 -->
+    <!-- &엔터티; 또는 &#코드값; 으로표현 -->
+    <!-- 2  <  3 -->
+    2 &nbsp;&nbsp; &lt; &nbsp;&nbsp; 3 <br />
+
+    &gt;<br />
+
+    10 &divide; 2 = 5<br />
+    &radic;2 = 1.414<br />
+
+    <!-- pre태그 : 사용자가 입력한 그대로 출력-->
+
+    <p>
+      br 태그로 다음 줄로 넘어갑니다 Iure consequatur odit eius quidem. Ullam
+      delectus ducimus optio dolorem vitae vero pariatur nesciunt debitis,
+      praesentium voluptatem quae natus excepturi doloremque! Explicabo?
+    </p>
+
+    <pre>
+    &lt;pre&gt;태그를 사용하면
+    사용자가 입력한 그대로 출력됩니다.
+    Iure consequatur odit eius quidem. Ullam delectus ducimus optio 
+     dolorem vitae vero pariatur nesciunt debitis, praesentium voluptatem
+     quae natus excepturi doloremque! Explicabo?
+  </pre
+    >
+
+    <!-- strong과 bold 차이 -->
+    <!-- 둘다 굵은 글자, strong은 강조해서 읽어줌 -->
+
+    <!-- 글자 모양 태그 -->
+    <p>
+      <b>굵은 글자</b><br />
+      <strong>굵은 글자</strong><br />
+      <i>기울어진 글자</i><br />
+      보통 문자 <small>한 단계 작은 문자</small><br />
+      <del>삭제</del><br />
+      <ins>추가</ins><br />
+      보통 문자의 <sup>윗첨자</sup><br />
+      보통 문자의 <sub>아랫첨자</sub><br />
+      <mark>하이라이팅</mark><br />
+    </p>
+
+    <!-- 이미지 삽입 -->
+    <h3>이미지 삽입</h3>
+
+    <img src="images/apple.jpeg" width="200" height="200" alt="사과" />
+    <img src="images/nothing" width="150" height="100" alt="사진없음" />
+    <img
+      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+      width="200"
+      height="100"
+      alt="사진 주소 변경됨"
+    />
+    <br /><br /><br />
+
+    <!-- a태그 : 링크 추가하기 , href속성이 필수 -->
+    <a href="https://www.naver.com/" title="네이버">여기를 클릭</a>하면 네이버가
+    나와요.<br /><br /><br />
+    <a
+      href="https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwjo457vp-b6AhVWE4gKHUapAwsQPAgI"
+      ><img
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+        width="200"
+        height="100"
+        alt="구글 사이트"
+    /></a>
+
+    <hr />
+
+    <!-- 공간 분할 태그 -->
+    <!-- 1. 블록 형식 태그 -->
+    <!-- div태그, p태그, h태그, 목록태그, 테이블태그, 입력양식태그 -->
+    <div>div태그 - block 형식</div>
+    <div>div태그 - block 형식</div>
+    <div>div태그 - block 형식</div>
+    <div>div태그 - block 형식</div>
+    <div>div태그 - block 형식</div>
+    <br /><br />
+
+    <!-- 2. 인라인 형식 태그 -->
+    <!-- span태그, a태그, input태그, 글자형식태그 -->
+    <span>span태그 - inline형식</span>
+    <span>span태그 - inline형식</span>
+    <span>span태그 - inline형식</span>
+    <span>span태그 - inline형식</span>
+    <span>span태그 - inline형식</span>
+    <br /><br />
+
+    <!-- 3. 시맨틱 태그 -->
+    <!-- 문서 구조화 : 검색 엔진 노출 극대화 -->
+    <header>header</header>
+    <nav>nav</nav>
+    <aside>aside</aside>
+    <section>section</section>
+    <footer>footer</footer>
+  </body>
+</html>

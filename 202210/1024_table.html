@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        height: 20px;
+        width: 100px;
+        padding: 10px;
+        text-align: left;
+      }
+      thead,
+      tfoot {
+        background: powderblue;
+        color: blue;
+      }
+      td {
+        border-bottom: 1px solid gray;
+      }
+      /* tbody tr:nth-child(even) {
+        background: aliceblue;
+      } */
+      tbody tr:hover {
+        background: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>기본 구조를 가진 테이블</h3>
+    <table>
+      <caption>
+        1학기 성적
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김규리</td>
+          <td>80</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>손이안</td>
+          <td>70</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>정슬기</td>
+          <td>88</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>합</td>
+          <td>225</td>
+          <td>230</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

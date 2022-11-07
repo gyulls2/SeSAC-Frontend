@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var status = prompt("상태를 입력하세요");
+
+      while (status != ("delete" || "shop" || "buy")) {
+        status = prompt("delete, shop, buy 중 입력하세요");
+      }
+
+      switch (status) {
+        case "delete":
+          document.write("삭제하기");
+          break;
+        case "shop":
+          document.write("쇼핑 계속하기");
+          break;
+        case "buy":
+          document.write("구매하기");
+          break;
+      }
+    </script>
+  </body>
+</html>

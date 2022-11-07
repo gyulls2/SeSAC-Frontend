@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var int = prompt("정수를 입력하세요");
+      int = parseInt(int);
+
+      // 숫자 0은 false를 의미함
+      var txt = int % 2 ? "홀수" : "짝수";
+
+      document.write("<h3>입력한 값 : " + int + "</h3>");
+      document.write("<h3>" + txt + "</h3>");
+    </script>
+  </body>
+</html>

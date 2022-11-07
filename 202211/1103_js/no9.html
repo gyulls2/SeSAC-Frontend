@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = Math.floor(Math.random() * 101);
+      var count = 0;
+
+      do {
+        var x = parseInt(prompt("숫자를 입력하세요"));
+        count += 1;
+
+        if (count >= 6) {
+          alert("실패!");
+          break;
+        } else if (x > num) alert("👎👎다운👎👎\n남은 기회 : " + (6 - count));
+        else if (x < num) alert("👍👍업👍👍\n남은 기회 : " + (6 - count));
+        else {
+          alert("정답입니다!");
+          break;
+        }
+      } while (true);
+    </script>
+  </body>
+</html>

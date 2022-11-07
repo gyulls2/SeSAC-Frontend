@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var 과일과숫자 = [3, "과일", ["딸기", "사과", 3627.5], 10];
+      // var len = 과일과숫자.length;
+
+      // for (var i = 0; i < len; i++) {
+      //   console.log(과일과숫자[i]);
+      // }
+
+      // 인디언 이름 제조기 만들기
+      // var 색상 = ["푸른", "붉은", "검은", "하얀"];
+      // var 자연 = ["늑대", "태양", "독수리", "바람"];
+      // var 단어 = ["눈물", "환생", "기상", "일격", "유령"];
+      // console.log(
+      //   색상[Math.floor(Math.random() * 4)] +
+      //     자연[Math.floor(Math.random() * 4)] +
+      //     단어[Math.floor(Math.random() * 5)]
+      // );
+
+      var sum = 0;
+      var arr;
+      var n = prompt("배열을 입력하세요 예) 2 24 35 56");
+      arr = n.split(" ").map(Number);
+
+      for (var i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+      }
+
+      document.write("합은 " + sum);
+    </script>
+  </body>
+</html>

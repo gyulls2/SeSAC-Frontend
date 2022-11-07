@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var skills = prompt("스킬을 입력하세요 예) HTML CSS Javascript React");
+      skills = skills.split(" ");
+
+      if (skills.includes("Javascript") && skills.includes("React")) {
+        alert("합격입니다.");
+      } else if (skills.includes("Javascript") || skills.includes("React")) {
+        alert("예비입니다.");
+      } else alert("탈락입니다.");
+    </script>
+  </body>
+</html>

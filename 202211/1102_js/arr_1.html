@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var plots = [];
+      var n = prompt("배열을 입력하세요 예) 2 24 35 56");
+      plots = n.split(" ").map(Number);  // 배열의 문자를 숫자로 변환
+
+      document.write("var plots = [" + plots + "]<br><br>");
+
+      for (var i = 0; i < plots.length; i++) {
+        for (var j = 0; j < plots[i]; j++) {
+          document.write("*");
+        }
+        document.write(plots[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>

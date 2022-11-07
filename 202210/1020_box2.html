@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        width: 100px;
+        height: 100px;
+        border: 10px solid black;
+        background: red;
+        margin: 10px;
+      }
+
+      .div1 {
+        margin: 100px 50px 200px;
+      } */
+
+      /* display */
+      #box {
+        display: inline-block;
+      }
+      span {
+        display: block;
+        width: 100px;
+        height: 60px;
+        background-color: skyblue;
+      }
+
+      div > div {
+        display: inline;
+        background: skyblue;
+      }
+
+      .inline-block > div {
+        display: inline-block;
+        border: 2px dotted red;
+        background: skyblue;
+        margin: 10px;
+        width: 60px;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div> -->
+
+    <!-- display 속성 -->
+    <!-- <span>안녕</span>
+    <div id="box">반가워요</div>
+    <span>안녕</span> -->
+
+    <!-- block -->
+    <div><span>block span</span>과 <span>block span</span>입니다.</div>
+    <br /><br />
+
+    <!-- inline -->
+    <div style="background: orange">
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+      <div>inline DIV</div>
+    </div>
+    <br /><br />
+
+    <!-- inline-block -->
+    <div class="inline-block" style="background: orange">
+      <div>inline-block DIV</div>
+      <div>inline-block DIV</div>
+      <div>inline-block DIV</div>
+    </div>
+  </body>
+</html>

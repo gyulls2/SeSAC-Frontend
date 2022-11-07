@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문과 반복문-2 1번</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var year = prompt("년도를 입력하세요");
+      year = parseInt(year);
+      var n = 0;
+      var url;
+
+      switch (year % 12) {
+        case 0:
+          url = "./images/icon0.png";
+          n = "원숭이";
+          break;
+        case 1:
+          url = "./images/icon1.png";
+          n = "닭";
+          break;
+        case 2:
+          url = "./images/icon2.png";
+          n = "개";
+          break;
+        case 3:
+          url = "./images/icon3.png";
+          n = "돼지";
+          break;
+        case 4:
+          url = "./images/icon4.png";
+          n = "쥐";
+          break;
+        case 5:
+          url = "./images/icon5.png";
+          n = "소";
+          break;
+        case 6:
+          url = "./images/icon6.png";
+          n = "호랑이";
+          break;
+        case 7:
+          url = "./images/icon7.png";
+          n = "토끼";
+          break;
+        case 8:
+          url = "./images/icon8.png";
+          n = "용";
+          break;
+        case 9:
+          url = "./images/icon9.png";
+          n = "뱀";
+          break;
+        case 10:
+          url = "./images/icon10.png";
+          n = "말";
+          break;
+        case 11:
+          url = "./images/icon11.png";
+          n = "양";
+          break;
+        default:
+          document.write("년도를 입력하세요 예) 2012");
+      }
+      if (n != 0) {
+        document.write("<img src=" + url + "><br>");
+        document.write(year + "년 생은 " + n + "띠 입니다.");
+      }
+    </script>
+  </body>
+</html>
