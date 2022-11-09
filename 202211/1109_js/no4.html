@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Die {
+        constructor(dice) {
+          this.dice = 1;
+        }
+        roll = () => (this.dice = Math.floor(Math.random() * 6 + 1));
+        display = () => document.write(`현재 주사위의 상태는 : ${this.roll()}`);
+      }
+      let play = new Die();
+      play.roll();
+      play.display();
+    </script>
+  </body>
+</html>
